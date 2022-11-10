@@ -87,7 +87,7 @@ celery -A sales_structure worker -l info
 ```
 celery -A sales_structure beat -l info 
 ```
-
+P.S. Если будут ошибки по подключению. Измените в settings.py c REDIS_HOST = '127.0.0.1' на REDIS_HOST = '0.0.0.0'
 ### Принцип работы:
 
 Через супер юзера создайте пользователя. Используя username и пароль получите JWT токен.
